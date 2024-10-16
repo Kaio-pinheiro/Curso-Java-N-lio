@@ -1,7 +1,7 @@
-package random;
+package utils;
 import java.util.Locale;
 
-public class formatacao_printf {
+public class Formatação_printf {
 
 	public static void main(String[] args) {
 		String produto1 = "Computer";
