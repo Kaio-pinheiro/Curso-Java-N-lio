@@ -5,15 +5,15 @@ import java.util.Scanner;
 
 import entities.Triangle;
 
-public class ProgramPOO {
+public class ProgramComPOO {
 
 	// Programa COM orientação a objetos
-	
+
 	public static void main(String[] args) {
 
 		Locale.setDefault(Locale.US);
 		Scanner leia = new Scanner(System.in);
-	
+
 		Triangle x = new Triangle();
 		Triangle y = new Triangle();
 
@@ -28,16 +28,16 @@ public class ProgramPOO {
 
 		double areaX = x.area();
 		double areaY = y.area();
-		
+
 		System.out.printf("Triangle X area: %.4f%n", areaX);
 		System.out.printf("Triangle Y area: %.4f%n", areaY);
-		
-		if(areaX > areaY) {
+
+		if (areaX > areaY) {
 			System.out.println("Larger area: X");
-		}else {
+		} else {
 			System.out.println("Larger area: Y");
 		}
-		
+
 		leia.close();
 	}
 
