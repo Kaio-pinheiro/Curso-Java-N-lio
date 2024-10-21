@@ -35,7 +35,6 @@ public class ProgramEmployeeList {
 			list.add(emp);
 			
 		}
-		System.out.println();
 		System.out.println("Enter the employeee id that will have salary increase : ");
 		int idsalary = leia.nextInt();
 		// Procurando a posição do idsalary(funcionário que vai receber o aumento) dentro da lista
