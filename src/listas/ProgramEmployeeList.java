@@ -24,7 +24,10 @@ public class ProgramEmployeeList {
 			System.out.println("Employee #" + (i+1) + ":");
 			System.out.print("Id: ");
 			Integer id = leia.nextInt();
-			
+			while (hasId(list,id)) {
+				System.out.println("Id already taken! Try again: ");
+				id = leia.nextInt();
+			}
 			
 			System.out.print("Name: ");
 			leia.nextLine();
