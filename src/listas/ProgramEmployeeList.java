@@ -42,18 +42,21 @@ public class ProgramEmployeeList {
 		// se não encontrar vai retornar null e se retorna pergunto a porcentagem a ser aumentada
 		// ai vou acessar na lista o funcionário que está na posição que eu encontrei *pos* e vou chamar a função pra aumentar o salário dele
 		Integer pos = position(list, idsalary); 
+		//EmployeeList emp = list.stream().filter(x -> x.getId() == idsalary).findFirst().orElse(null);
+		// trocar o pos por emp caso for usar o filter
 		if(pos == null) {
 			System.out.println("This is id does not exist!");
 		}else {
 			System.out.print("Enter the percentage: ");
 			double percent = leia.nextDouble();
 			//get(pos) acessa o funcionário que está na posição pos e chama a função de aumentar o salario
+			// trocar o list.get(pos) por emp caso for usar o filter
 			list.get(pos).increaseSalary(percent);
 		}
 		System.out.println();
 		System.out.println("List of employees:");
-		for (EmployeeList emp : list) {
-			System.out.println(emp);
+		for (EmployeeList e : list) {
+			System.out.println(e);
 		}
 		
 		leia.close();
