@@ -24,6 +24,8 @@ public class ProgramEmployeeList {
 			System.out.println("Employee #" + (i+1) + ":");
 			System.out.print("Id: ");
 			Integer id = leia.nextInt();
+			
+			
 			System.out.print("Name: ");
 			leia.nextLine();
 			String name = leia.nextLine();
@@ -73,6 +75,11 @@ public class ProgramEmployeeList {
 			}
 		}
 		return null;
+	}
+	
+	public static boolean hasId(List<EmployeeList> list, int id) {
+		EmployeeList emp = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+		return emp != null;
 	}
 
 }
