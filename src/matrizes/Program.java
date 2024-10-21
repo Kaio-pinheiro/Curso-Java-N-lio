@@ -11,8 +11,10 @@ public class Program {
 		int n = leia.nextInt();
 		int[][] mat = new int[n][n];
 
+		// TROQUEI n por mat.length
+		// TROQUEI n por mat[i].length
 		for (int i = 0; i < mat.length; i++) {
-			for (int j = 0; j < n; j++) {
+			for (int j = 0; j < mat[i].length; j++) {
 				mat[i][j] = leia.nextInt();
 			}
 		}
@@ -24,7 +26,7 @@ public class Program {
 		System.out.println();
 		int count = 0;
 		for (int i = 0; i < mat.length; i++) {
-			for (int j = 0; j < n; j++) {
+			for (int j = 0; j < mat[i].length; j++) {
 				if (mat[i][j] < 0) {
 					count++;
 				}
