@@ -30,7 +30,7 @@ public class ProgramEmployeeList {
 			System.out.print("Salary: ");
 			Double salary = leia.nextDouble();
 			
-			// Instancia na memoria um novo objeto Funcionario(EMPLOYEE) com esses argumentos e dps insere ele na lista
+			// Instância na memória um novo objeto Funcionário(EMPLOYEE) com esses argumentos e depois insere ele na lista
 			EmployeeList emp = new EmployeeList(id, name, salary);
 			list.add(emp);
 			
@@ -39,7 +39,7 @@ public class ProgramEmployeeList {
 		System.out.print("Enter the employeee id that will have salary increase : ");
 		int idsalary = leia.nextInt();
 		// Procurando a posição do idsalary(funcionário que vai receber o aumento) dentro da lista
-		// se nao encontrar vai retornar null e se retorna pergunto a porcentagem, a ser aumentada
+		// se não encontrar vai retornar null e se retorna pergunto a porcentagem, a ser aumentada
 		// ai vou acessar na lista o funcionario que esta na posicao que eu encontrei *pos* e vou chamar a função pra aumentar o salario dele
 		Integer pos = position(list, idsalary); 
 		if(pos == null) {
