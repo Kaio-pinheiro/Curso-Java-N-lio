@@ -12,16 +12,16 @@ public class Exercicio01 {
 		 */
 
 		Scanner leia = new Scanner(System.in);
-		
+
 		System.out.println("Digite um número de 1 a 1000");
 		int X = leia.nextInt();
-		if(!(X >= 1 && X <= 1000)) {
+		if (!(X >= 1 && X <= 1000)) {
 			System.out.println("Número inválido, digite um número entre 1 e 1000!");
 			X = leia.nextInt();
 		}
-		
+
 		for (int i = 1; i < X; i++) {
-			if(i % 2 != 0) {
+			if (i % 2 != 0) {
 				System.out.println(i);
 			}
 		}

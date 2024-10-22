@@ -17,7 +17,7 @@ public class Exercicio05 {
 
 		long fatorial = calcularFatorial(N);
 		System.out.println(fatorial);
-		
+
 		leia.close();
 
 	}
