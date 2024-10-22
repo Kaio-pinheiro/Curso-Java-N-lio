@@ -1,11 +1,11 @@
 package entities;
 
 public class EmployeeList {
-	
+
 	private Integer id;
 	private String name;
 	private Double salary;
-	
+
 	public EmployeeList() {
 	}
 
@@ -43,9 +43,9 @@ public class EmployeeList {
 	public String toString() {
 		return id + ", " + name + ", " + String.format("%.2f", salary);
 	}
-	
+
 	public void increaseSalary(double percentage) {
 		salary += salary * percentage / 100.0;
 	}
-	
+
 }
