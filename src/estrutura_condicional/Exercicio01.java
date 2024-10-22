@@ -9,17 +9,16 @@ public class Exercicio01 {
 
 		Locale.setDefault(Locale.US);
 		Scanner leia = new Scanner(System.in);
-		
-		
+
 		System.out.println("Digite um número inteiro:");
 		int numero = leia.nextInt();
-		
+
 		if (numero < 0) {
 			System.out.println("NEGATIVO");
 		} else {
 			System.out.println("NÃO NEGATIVO");
 		}
-		
+
 		leia.close();
 	}
 
