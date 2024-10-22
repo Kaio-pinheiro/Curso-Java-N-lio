@@ -35,12 +35,7 @@ public class ProductConstrutor {
 	}
 
 	public String toString() {
-		return name 
-				+ ", $ " 
-				+ String.format("%.2f", price) 
-				+ ", " 
-				+ quantity 
-				+ " units, Total: $ "
+		return name + ", $ " + String.format("%.2f", price) + ", " + quantity + " units, Total: $ "
 				+ String.format("%.2f", totalValueInStock());
 	}
 }

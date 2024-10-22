@@ -7,14 +7,14 @@ public class Student {
 
 	public String name;
 	public List<Double> listaNotas = new ArrayList<>();
-	
+
 	public double media() {
-		for(double notas : listaNotas) {
+		for (double notas : listaNotas) {
 			return listaNotas.get(0) + listaNotas.get(1) + listaNotas.get(2);
 		}
 		return 0;
 	}
-	
+
 	public double result() {
 		if (media() < 60.0) {
 			System.out.println("FAILED");
@@ -24,13 +24,13 @@ public class Student {
 		}
 		return 0;
 	}
-	
+
 	public double pontosFaltam() {
-		if (media()< 60.0) {
+		if (media() < 60.0) {
 			return 60.0 - media();
-		}else {
+		} else {
 			return 0.0;
 		}
-		
+
 	}
 }
