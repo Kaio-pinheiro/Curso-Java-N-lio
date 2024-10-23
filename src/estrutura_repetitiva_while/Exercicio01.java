@@ -9,24 +9,22 @@ public class Exercicio01 {
 
 		Locale.setDefault(Locale.US);
 		Scanner leia = new Scanner(System.in);
-		
+
 		int senhaCorreta = 2002;
 		int tentativas = 0;
-		
-	
-		
-		while(tentativas != senhaCorreta) {
+
+		while (tentativas != senhaCorreta) {
 			System.out.println("Digite sua senha:");
 			int senhaDigitada = leia.nextInt();
 			tentativas = senhaDigitada;
-			
-			if(senhaDigitada != senhaCorreta) {
+
+			if (senhaDigitada != senhaCorreta) {
 				System.out.println("Acesso inválido");
 			} else {
 				System.out.println("Acesso permitido");
 			}
 		}
-		
+
 		leia.close();
 	}
 
