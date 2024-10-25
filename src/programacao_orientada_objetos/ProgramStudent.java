@@ -12,7 +12,7 @@ public class ProgramStudent {
 		Locale.setDefault(Locale.US);
 		Scanner leia = new Scanner(System.in);
 		Student student = new Student();
-
+		
 		System.out.print("Digite seu nome: ");
 		String name = leia.nextLine();
 
