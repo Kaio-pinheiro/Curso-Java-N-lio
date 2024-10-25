@@ -10,7 +10,7 @@ public class InstanciandoData {
 	public static void main(String[] args) {
 		// Documentação 
 		//https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/format/DateTimeFormatter.html
-		//https://docs-oracle-com.translate.goog/javase/jp/17/docs/api/java.base/java/time/format/DateTimeFormatter.html?_x_tr_sl=ja&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc
+	
 		DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
 		
