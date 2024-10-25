@@ -26,7 +26,6 @@ public class InstanciandoData {
 		LocalDate d10 = LocalDate.of(2024,  10, 20);
 		LocalDateTime d11 = LocalDateTime.of(2024,  10, 20, 1, 30);
 		
-		
 		System.out.println("Data sem hora: " + dataSemHora);
 		System.out.println();
 		System.out.println("Data com hora: " + dataComHora);
