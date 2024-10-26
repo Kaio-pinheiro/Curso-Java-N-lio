@@ -17,13 +17,13 @@ public class ProgramVectorMaisVelho {
 		double maisVelho = idades[0];
 
 		for (int i = 0; i < n; i++) {
-			System.out.println("Dados da "+ (i +1) + "ª pessoa:");
+			System.out.println("Dados da " + (i + 1) + "ª pessoa:");
 			System.out.print("Nome: ");
 			nomes[i] = leia.next();
 			System.out.print("Idade: ");
 			idades[i] = leia.nextInt();
 		}
-		
+
 		int nomeMaior = 0;
 		for (int i = 0; i < n; i++) {
 			if (idades[i] > maisVelho) {
@@ -32,8 +32,7 @@ public class ProgramVectorMaisVelho {
 			}
 		}
 		System.out.println("PESSOA MAIS VELHA: " + nomes[nomeMaior]);
-		
-		
+
 		leia.close();
 	}
 
